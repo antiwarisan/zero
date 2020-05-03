@@ -5,11 +5,11 @@ $header[] = "User-Agent: okhttp/3.10.0";
 $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
-$header[] = "X-AppVersion: 3.50.1";
+$header[] = "X-AppVersion: 3.51.4";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -6.221".mt_rand(100,999).",106.78".mt_rand(1000,9999);
+$header[] = "X-Location: -7.221".mt_rand(100,999).",112.78".mt_rand(1000,9999);
 if ($pin):
 $header[] = "pin: $pin";
     endif;
