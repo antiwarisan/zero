@@ -4,7 +4,7 @@ include "function.php";
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("green","[•]   Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("green","[•]           SUROBOYO - MEDURO          \n");
-echo color("green","[•]         DST - NOT LIKE OTHERS \n");
+echo color("green","[•]          == DST - GANBATTE == \n");
 echo color("green","[•]     PEJUANG ANTI WARISAN KELUARGA \n");
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
 function change(){
@@ -32,14 +32,14 @@ function change(){
         echo "\n".color("nevy","?] Mau Redeem Voucher?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
-        echo color("green","# # # # # # # # # # # ( COVID 19 ) # # # # # # # # # # #");
-        echo "\n".color("yellow","!] Claim voc GOFOOD 1");
+        echo color("green","# # # # # # # # # # # ( 4D3N4 ) # # # # # # # # # # #");
+        echo "\n".color("yellow","!] GOFOOD PART 1");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(20);
+        sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -47,13 +47,13 @@ function change(){
         }else{
         echo "\n".color("red","-] Message: ".$message);
         gocar:
-        echo "\n".color("yellow","!] Claim voc GOFOOD 2");
+        echo "\n".color("yellow","!] GOFOOD PART 2");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(20);
+        sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
@@ -71,13 +71,13 @@ function change(){
         echo "\n".color("red","-] Message: ".$message);
         }
         gofood:
-        echo "\n".color("yellow","!] Claim voc GOFOOD 3");
+        echo "\n".color("yellow","!] GOFOOD PART 3");
         echo "\n".color("yellow","!] Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
-        sleep(3);
+        sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKAN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EBADAHMAKANA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","+] Message: ".$message);
