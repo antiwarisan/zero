@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("green","[•]   Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("green","[•]           SUROBOYO - MEDURO          \n");
+echo color("green","[•]           == LOCK - DOWN ==          \n");
 echo color("green","[•]          == DST - GANBATTE == \n");
 echo color("green","[•]     PEJUANG ANTI WARISAN KELUARGA \n");
 echo color("yellow","# # # # # # # # # # # # # # # # # # # # # # # \n");
